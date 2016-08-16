@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	}
+li{
+	list-style:none;
+	}
+a{text-decoration:none;}
+
+#box{
+	width:500px;
+	margin:0 auto;
+	
+	
+	}
+#box ul{
+	height:31px;
+	border-left:1px solid #999999;
+	border-bottom:1px solid #999999;
+	
+	}
+#box ul li{
+	
+	float:left;
+	
+	height:30px;
+	line-height:30px;
+	font-size:10px;
+	font-family:arial;
+	border-right:1px solid #999999;
+	border-top:1px solid #999999;
+	}
+#box ul li a{
+	color:#1b2423;
+	display:block;
+	height:29px;
+	border:1px solid #fff;
+	border-bottom:none;
+	background-color:#dfe0e4;
+	padding:0 12px;
+	}
+#box ul li .active{
+	background:#fff;
+	border-bottom:1px solid #fff;
+	color:red;
+	}
+.content{
+	border:1px solid #999;
+	border-top:none;
+	padding:9px 20px 20px;
+	
+	}
+.content h3{
+	line-height:46px;
+	font-size:22px;
+	font-family:arial;
+	font-weight:normal;
+	color:#43434f;
+	border-bottom:1px dashed #dadada;
+	margin-bottom:10px;
+	
+	}
+.img{
+	float:left;
+	border:1px solid #dddddd;
+	padding:5px;
+	margin-right:20px;
+	margin-bottom:32px;
+
+}
+.content p{
+	line-height:15px;
+	font-size:12px;
+	font-family:arial;
+	
+	}
+.content h4 a{
+	color:#274285;
+	text-decoration:underline;
+	font-size:12px;
+	font-family:arial;
+	}
+.content>div{display:none;}
+#tabs1{display:block;}
+
+</style>
+<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	 /*$('#btn1').click(function(){
+		$('li>a').removeClass()
+		$(this).addClass('active')
+		$('.content>div').hide()	
+		$('#tabs1').fadeIn()
+		
+		
+	})
+	$('#btn2').click(function(){
+		$('li>a').removeClass()
+		$(this).addClass('active')
+		$('.content>div').hide()	
+		$('#tabs2').fadeIn()
+		
+		
+	})
+	$('#btn3').click(function(){
+		$('li>a').removeClass()
+		$(this).addClass('active')
+		$('.content>div').hide()	
+		$('#tabs3').fadeIn()
+		
+		
+	})
+	$('#btn4').click(function(){
+		$('li>a').removeClass()
+		$(this).addClass('active')
+		$('.content>div').hide()	
+		$('#tabs4').fadeIn()
+		
+		
+	})*/
+	
+	$('li>a').click(function(){
+		$('li>a').removeClass()
+		$(this).addClass('active')
+		$('.content>div').hide()
+		var x=$(this).attr('href')
+		$(x).fadeIn()
+		return false
+	})
+   
+});
+
+</script>
+</head>
+
+<body>
+<div id="box">
+	<ul>
+    	<li><a href="#tabs1" class="active" id="btn1">Gallery</a></li>
+        <li><a href="#tabs2" id="btn2">Submit</a></li>
+        <li><a href="#tabs3" id="btn3">Resources</a></li>
+        <li><a href="#tabs4" id="btn4">Contact</a></li>
+    </ul>
+    <div class="content">
+    	<div id="tabs1">
+        	<h3>Gallery</h3>
+            <div class="img"><img src="images/simonamunteanu_thumb.gif"/></div>
+            <h4><a href="#">www.DesignBombs.com</a></h4>
+            <p>Saw polecat than took bankrupt good hillbilly stew, crazy, fancy and hillbilly heap rodeo, pappy. Thar range saw me him sherrif nothin' shiney dirt, pigs sheep city-slickers everlastin' shotgun driveway. Promenade catfight fart fiddle jiggly gonna tarnation, fence, what quarrel dirty, if. Pot grandma crop kinfolk jezebel diesel coonskin hoosegow wirey fixin' shack good roped in. Reckon stew tax-collectors, grandpa tobaccee hayseed good wash tired caboodle burnin' landlord.<br />
+            
+Smokin' driveway wrestlin' go darn truck moonshine wirey cow grandpa saw, coonskin bull, java, huntin'. 
+            
+Stinky yonder pigs in, rustle kinfolk gonna marshal sittin' wagon, grandpa. Ya them firewood buffalo, tobaccee cabin.</p>
+        </div>
+        
+        <div id="tabs2">
+        	<h3>Submit</h3>
+            <div class="img"><img src="images/sketchblog_thumb.gif"/></div>
+            <h4><a href="#">www.DesignBombs.com</a></h4>
+            <p>Saw polecat than took bankrupt good hillbilly stew, crazy, fancy and hillbilly heap rodeo, pappy. Thar range saw me him sherrif nothin' shiney dirt, pigs sheep city-slickers everlastin' shotgun driveway. Promenade catfight fart fiddle jiggly gonna tarnation, fence, what quarrel dirty, if. Pot grandma crop kinfolk jezebel diesel coonskin hoosegow wirey fixin' shack good roped in. Reckon stew tax-collectors, grandpa tobaccee hayseed good wash tired caboodle burnin' landlord.<br />
+            
+Smokin' driveway wrestlin' go darn truck moonshine wirey cow grandpa saw, coonskin bull, java, huntin'. 
+            
+Stinky yonder pigs in, rustle kinfolk gonna marshal sittin' wagon, grandpa. Ya them firewood buffalo, tobaccee cabin.</p>
+        </div>
+        <div id="tabs3">
+        	<h3>Resources</h3>
+            <div class="img"><img src="images/mynus_thumb.gif"/></div>
+            <h4><a href="#">www.DesignBombs.com</a></h4>
+            <p>Saw polecat than took bankrupt good hillbilly stew, crazy, fancy and hillbilly heap rodeo, pappy. Thar range saw me him sherrif nothin' shiney dirt, pigs sheep city-slickers everlastin' shotgun driveway. Promenade catfight fart fiddle jiggly gonna tarnation, fence, what quarrel dirty, if. Pot grandma crop kinfolk jezebel diesel coonskin hoosegow wirey fixin' shack good roped in. Reckon stew tax-collectors, grandpa tobaccee hayseed good wash tired caboodle burnin' landlord.<br />
+            
+Smokin' driveway wrestlin' go darn truck moonshine wirey cow grandpa saw, coonskin bull, java, huntin'. 
+            
+Stinky yonder pigs in, rustle kinfolk gonna marshal sittin' wagon, grandpa. Ya them firewood buffalo, tobaccee cabin.</p>
+        </div>
+        <div id="tabs4">
+        	<h3>Contact</h3>
+            <div class="img"><img src="images/estebanmunoz_thumb.gif"/></div>
+            <h4><a href="#">www.DesignBombs.com</a></h4>
+            <p>Saw polecat than took bankrupt good hillbilly stew, crazy, fancy and hillbilly heap rodeo, pappy. Thar range saw me him sherrif nothin' shiney dirt, pigs sheep city-slickers everlastin' shotgun driveway. Promenade catfight fart fiddle jiggly gonna tarnation, fence, what quarrel dirty, if. Pot grandma crop kinfolk jezebel diesel coonskin hoosegow wirey fixin' shack good roped in. Reckon stew tax-collectors, grandpa tobaccee hayseed good wash tired caboodle burnin' landlord.<br />
+            
+Smokin' driveway wrestlin' go darn truck moonshine wirey cow grandpa saw, coonskin bull, java, huntin'. 
+            
+Stinky yonder pigs in, rustle kinfolk gonna marshal sittin' wagon, grandpa. Ya them firewood buffalo, tobaccee cabin.</p>
+        </div>
+    
+    </div>
+
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</body>
+</html>
